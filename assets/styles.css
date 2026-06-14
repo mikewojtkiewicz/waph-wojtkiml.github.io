@@ -1,0 +1,41 @@
+:root {
+  --dark: #111827;
+  --primary: #2563eb;
+  --accent: #38bdf8;
+  --light: #f8fafc;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #1f2937; }
+a { color: var(--accent); }
+
+.hero-section {
+  background: linear-gradient(135deg, rgba(17,24,39,.96), rgba(37,99,235,.84)), url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1600&q=80') center/cover;
+  padding-top: 70px;
+}
+
+.min-vh-75 { min-height: 75vh; }
+.letter-spaced { letter-spacing: .18rem; color: #bfdbfe; }
+.section-padding { padding: 5rem 0; }
+.section-title { font-weight: 800; color: var(--dark); }
+.section-title.light { color: #fff; }
+.profile-photo { width: 220px; height: 220px; border-radius: 50%; border: 6px solid rgba(255,255,255,.8); background: #fff; object-fit: cover; }
+.clock-card { width: 220px; padding: 1rem; border-radius: 1rem; background: rgba(255,255,255,.96); color: #111827; }
+.digital-clock { font-size: 1.1rem; font-weight: 700; margin-bottom: .5rem; }
+.skill-badges { display: flex; flex-wrap: wrap; gap: .5rem; }
+.skill-badges span { background: #e0f2fe; color: #075985; padding: .4rem .65rem; border-radius: 999px; font-size: .9rem; font-weight: 600; }
+.timeline { max-width: 900px; margin: 0 auto; border-left: 4px solid #dbeafe; padding-left: 1.5rem; }
+.timeline-item { position: relative; margin-bottom: 2rem; padding: 1.25rem; background: #fff; border-radius: 1rem; box-shadow: 0 12px 35px rgba(15, 23, 42, .08); }
+.timeline-item::before { content: ''; position: absolute; left: -2.05rem; top: 1.5rem; width: 1rem; height: 1rem; border-radius: 50%; background: var(--primary); border: 3px solid #fff; }
+.project-select { max-width: 220px; }
+.api-card { border: 1px solid #e5e7eb; }
+.api-output { min-height: 90px; font-size: 1.05rem; }
+.api-image { max-height: 280px; width: 100%; object-fit: cover; background: #e5e7eb; }
+.tracker-box img { max-width: 100%; background: #fff; padding: .35rem; border-radius: .4rem; }
+.course-page { background: #f8fafc; }
+@media print {
+  .navbar, button, .tracker-box { display: none !important; }
+  .section-padding { padding: 1.5rem 0; }
+  .hero-section { color: #000 !important; background: #fff !important; }
+  a { color: #000; }
+}
